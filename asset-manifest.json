@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/boonshuffle/static/css/main.db0babdd.chunk.css",
-    "main.js": "/boonshuffle/static/js/main.bf4ae30f.chunk.js",
-    "main.js.map": "/boonshuffle/static/js/main.bf4ae30f.chunk.js.map",
+    "main.css": "/boonshuffle/static/css/main.36c2f4fb.chunk.css",
+    "main.js": "/boonshuffle/static/js/main.a7f9acf0.chunk.js",
+    "main.js.map": "/boonshuffle/static/js/main.a7f9acf0.chunk.js.map",
     "runtime-main.js": "/boonshuffle/static/js/runtime-main.c1fef2a2.js",
     "runtime-main.js.map": "/boonshuffle/static/js/runtime-main.c1fef2a2.js.map",
     "static/js/2.0cc48fc6.chunk.js": "/boonshuffle/static/js/2.0cc48fc6.chunk.js",
     "static/js/2.0cc48fc6.chunk.js.map": "/boonshuffle/static/js/2.0cc48fc6.chunk.js.map",
     "index.html": "/boonshuffle/index.html",
-    "static/css/main.db0babdd.chunk.css.map": "/boonshuffle/static/css/main.db0babdd.chunk.css.map",
+    "static/css/main.36c2f4fb.chunk.css.map": "/boonshuffle/static/css/main.36c2f4fb.chunk.css.map",
     "static/js/2.0cc48fc6.chunk.js.LICENSE.txt": "/boonshuffle/static/js/2.0cc48fc6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c1fef2a2.js",
     "static/js/2.0cc48fc6.chunk.js",
-    "static/css/main.db0babdd.chunk.css",
-    "static/js/main.bf4ae30f.chunk.js"
+    "static/css/main.36c2f4fb.chunk.css",
+    "static/js/main.a7f9acf0.chunk.js"
   ]
 }
