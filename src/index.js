@@ -272,6 +272,16 @@ class Square extends React.Component {
    }
 }
 
+class GraySquare extends React.Component {
+   render() {
+      return (
+         <td className="gray-square">
+            No Boon
+         </td>
+      );
+   }
+}
+
 class BlueSquare extends React.Component {
    render() {
       return (
@@ -283,12 +293,16 @@ class BlueSquare extends React.Component {
 }
 
 class CharRow extends React.Component {
-   renderSquare(entry, index) {
+   renderSquare(entry, index, row) {
       if (entry.boons[index]) {
          return <BlueSquare />;
       }
       else {
-         return <Square />;
+         if(row % 2 === 0) {
+            return <Square />;
+         } else {
+            return <GraySquare />;
+         }
       }
    }
 
@@ -298,21 +312,22 @@ class CharRow extends React.Component {
 
    render() {
       var unit = this.props.unit;
+      var index = this.props.index;
 
       return (
          <tr>
             {this.renderHeader(unit)}
-            {this.renderSquare(unit, 0)}
-            {this.renderSquare(unit, 1)}
-            {this.renderSquare(unit, 2)}
-            {this.renderSquare(unit, 3)}
-            {this.renderSquare(unit, 4)}
-            {this.renderSquare(unit, 5)}
-            {this.renderSquare(unit, 6)}
-            {this.renderSquare(unit, 7)}
-            {this.renderSquare(unit, 8)}
-            {this.renderSquare(unit, 9)}
-            {this.renderSquare(unit, 10)}
+            {this.renderSquare(unit, 0, index)}
+            {this.renderSquare(unit, 1, index)}
+            {this.renderSquare(unit, 2, index)}
+            {this.renderSquare(unit, 3, index)}
+            {this.renderSquare(unit, 4, index)}
+            {this.renderSquare(unit, 5, index)}
+            {this.renderSquare(unit, 6, index)}
+            {this.renderSquare(unit, 7, index)}
+            {this.renderSquare(unit, 8, index)}
+            {this.renderSquare(unit, 9, index)}
+            {this.renderSquare(unit, 10, index)}
          </tr>
       )
    }
@@ -340,8 +355,8 @@ class Board extends React.Component {
                   <th>Flying</th>
                </tr>
                {
-                  shuffle.map((u) =>
-                     <CharRow unit={u} />
+                  shuffle.map((u, i) =>
+                     <CharRow unit={u} index={i} />
                   )
                }
             </table>

@@ -29,6 +29,12 @@ ul {
     color: #fff;
 }
 
+.gray-square {
+    background: rgb(128, 128, 128);
+    text-align: center;
+    color: rgb(128, 128, 128);
+}
+
 .blue-square {
     background: rgb(38, 75, 238);
     text-align: center;
